@@ -1,0 +1,84 @@
+.simulador {
+    font-family: inherit;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 20px;
+    background: yellow;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.mostrar {
+    display: flex;
+}
+
+.moda {
+    position: relative;
+    background: white;
+    width: 60%;
+    padding: 40px;
+    border: 3px solid gray;
+    text-align: center;
+}
+
+.moda h5 {
+    text-align: justify;
+}
+
+.botao {
+    font-size: 1rem;
+    text-align: center;
+    background: rgb(115, 187, 0);
+    padding: 5px 10px 5px 10px;
+}
+
+@keyframes moda {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .moda {
+    animation: modal .3s;
+}
+
+#fechar {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color: teal;
+    color: white;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+    .simulador {
+        cursor: pointer;
+    }
+    .botao {
+        cursor: pointer;
+    }
+    #fechar {
+        cursor: pointer;
+    }
+}

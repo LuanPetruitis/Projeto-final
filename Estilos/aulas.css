@@ -1,0 +1,29 @@
+main {
+    padding-top: 130px;
+    overflow-x: auto;
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-size: 0.8rem;
+}
+
+.periodo {
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+.aulas {
+    background: yellow;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    main {
+        padding-top: 10px;
+    }
+}
